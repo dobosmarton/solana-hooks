@@ -4,6 +4,7 @@ import { Idl, IdlTypes, Program, Provider, web3 } from '@project-serum/anchor';
 import { TypeDef } from '@project-serum/anchor/dist/cjs/program/namespace/types';
 import { IdlTypeDef } from '@project-serum/anchor/dist/cjs/idl';
 import { ExtendedWindow } from '../../types';
+import { loggerFactory } from '../../utils/logger';
 
 // SystemProgram is a reference to the Solana runtime!
 const { SystemProgram } = web3;
@@ -15,6 +16,7 @@ export type UseSolanaHook = (props: {
   network?: web3.Cluster;
   connectionConfig?: ConnectionConfig;
   commitment?: Commitment;
+  debug?: boolean;
 }) => {
   getAccount: () => Promise<TypeDef<IdlTypeDef, IdlTypes<Idl>>>;
   getProvider: () => Provider;
@@ -29,8 +31,11 @@ export const useSolana: UseSolanaHook = ({
   baseAccount,
   network = 'devnet',
   connectionConfig = {},
-  commitment = 'processed'
+  commitment = 'processed',
+  debug
 }) => {
+  const logger = loggerFactory(debug);
+
   const getProvider = (): Provider => {
     const connection = new Connection(clusterApiUrl(network), connectionConfig || commitment);
     const provider = new Provider(connection, (window as ExtendedWindow).solana, {
@@ -58,10 +63,10 @@ export const useSolana: UseSolanaHook = ({
         signers: [baseAccount]
       });
 
-      console.log('Created a new BaseAccount w/ address:', baseAccount.publicKey.toString());
+      logger('Created a new BaseAccount w/ address:', baseAccount.publicKey.toString());
       return baseAccount.publicKey.toString();
     } catch (error) {
-      console.log('Error creating BaseAccount account:', error);
+      logger('Error creating BaseAccount account:', (error as Error).message);
       return null;
     }
   };

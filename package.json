@@ -2,7 +2,6 @@
   "name": "solana-hooks",
   "version": "0.1.0",
   "description": "React hooks for development on Solana network",
-  "main": "index.js",
   "author": "Marton Dobos",
   "license": "MIT",
   "private": false,
