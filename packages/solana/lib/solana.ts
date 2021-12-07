@@ -3,8 +3,8 @@ import { Idl, IdlTypes, Program, Provider, web3 } from '@project-serum/anchor';
 
 import { TypeDef } from '@project-serum/anchor/dist/cjs/program/namespace/types';
 import { IdlTypeDef } from '@project-serum/anchor/dist/cjs/idl';
-import { ExtendedWindow } from '../../types';
-import { loggerFactory } from '../../utils/logger';
+import { ExtendedWindow } from '../../../src/types';
+import { loggerFactory } from '../../../src/utils/logger';
 
 // SystemProgram is a reference to the Solana runtime!
 const { SystemProgram } = web3;

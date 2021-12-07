@@ -1,0 +1,36 @@
+{
+  "name": "@solana-hooks/phantom",
+  "version": "0.1.0",
+  "description": "> TODO: description",
+  "author": "Marton Dobos <dobeis2@gmail.com>",
+  "homepage": "https://github.com/dobosmarton/solana-hooks#readme",
+  "license": "ISC",
+  "main": "lib/phantom.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dobosmarton/solana-hooks.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/dobosmarton/solana-hooks/issues"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "typescript": "^4.5.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "@types/node": "^16.11.12",
+    "@types/react": "^17.0.37",
+    "jest": "^27.4.3"
+  }
+}

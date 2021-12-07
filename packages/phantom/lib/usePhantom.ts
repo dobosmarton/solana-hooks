@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { ExtendedWindow } from '../../types';
-import { loggerFactory } from '../../utils/logger';
+import { ExtendedWindow } from '../../../src/types';
+import { loggerFactory } from '../../../src/utils/logger';
 
 /**
  * React hook for using Phantom crypto wallet
