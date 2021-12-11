@@ -4,7 +4,7 @@ import { usePhantom } from '@dobosmarton/phantom-hook';
 import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
-  const { walletAddress, connectWallet } = usePhantom();
+  const { walletAddress, connectWallet, disconnectWallet } = usePhantom();
 
   return (
     <div className={styles.container}>
@@ -21,14 +21,19 @@ const Home: NextPage = () => {
 
         {!walletAddress && (
           <a onClick={connectWallet} className={styles.card}>
-            <p>Connect to Phantom</p>
+            <p>Connect Phantom Wallet</p>
           </a>
         )}
 
         {walletAddress && (
-          <p className={styles.address}>
-            <strong>Wallett address</strong>: {walletAddress}
-          </p>
+          <>
+            <p className={styles.address}>
+              <strong>Wallett address</strong>: {walletAddress}
+            </p>
+            <a onClick={disconnectWallet} className={styles.card}>
+              <p>Disconnect Phantom Wallet</p>
+            </a>
+          </>
         )}
 
         <div className={styles.grid}>
