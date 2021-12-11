@@ -1,5 +1,5 @@
 {
-  "name": "@solana-hooks/solana",
+  "name": "@dobosmarton/solana-hook",
   "version": "0.1.1",
   "description": "> TODO: description",
   "author": "Marton Dobos <dobeis2@gmail.com>",
@@ -37,5 +37,6 @@
   },
   "peerDependencies": {
     "@solana/web3.js": "^1.31.0"
-  }
+  },
+  "gitHead": "2f59b99b76e8c4823768c191152f24d1f91ba853"
 }
