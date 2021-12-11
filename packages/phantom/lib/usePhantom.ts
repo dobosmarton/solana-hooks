@@ -11,6 +11,7 @@ import { loggerFactory } from '../../../src/utils/logger';
 export type UsePhantomHook = (props?: { debug?: boolean }) => {
   walletAddress: string | null;
   connectWallet: () => Promise<void>;
+  disconnectWallet: () => Promise<void>;
 };
 
 export const usePhantom: UsePhantomHook = ({ debug } = {}) => {
@@ -65,6 +66,19 @@ export const usePhantom: UsePhantomHook = ({ debug } = {}) => {
   };
 
   /*
+   * Disconnect from the Phantom wallet
+   */
+  const disconnectWallet = async () => {
+    const { solana } = window as ExtendedWindow;
+
+    if (solana) {
+      const response = await solana.disconnect();
+      logger('Connected with Public Key:', response);
+      setWalletAddress(null);
+    }
+  };
+
+  /*
    * When our component first mounts, let's check to see if we have a connected
    * Phantom Wallet
    */
@@ -73,5 +87,5 @@ export const usePhantom: UsePhantomHook = ({ debug } = {}) => {
     return () => window.removeEventListener('load', checkIfWalletIsConnected);
   }, []);
 
-  return { walletAddress, connectWallet };
+  return { walletAddress, connectWallet, disconnectWallet };
 };

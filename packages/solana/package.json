@@ -5,8 +5,8 @@
   "author": "Marton Dobos <dobeis2@gmail.com>",
   "homepage": "https://github.com/dobosmarton/solana-hooks#readme",
   "license": "ISC",
-  "main": "./dist/packages/solana/lib/solana.js",
-  "types": "./dist/packages/solana/lib/solana.d.ts",
+  "main": "./dist/packages/solana/lib/useSolana.js",
+  "types": "./dist/packages/solana/lib/useSolana.d.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
