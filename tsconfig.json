@@ -16,7 +16,5 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "exactOptionalPropertyTypes": true
-  },
-  "include": ["src", "packages"],
-  "exclude": []
+  }
 }
