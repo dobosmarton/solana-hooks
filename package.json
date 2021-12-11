@@ -4,20 +4,23 @@
   "description": "React hooks for development on Solana network",
   "author": "Marton Dobos",
   "license": "MIT",
-  "private": false,
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "tsc",
+    "build": "cd packages/solana/ && yarn run build && cd ../phantom/ && yarn run build"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.6.0",
     "@typescript-eslint/parser": "^5.6.0",
     "eslint": "^8.4.1",
     "eslint-config-prettier": "^8.3.0",
+    "lerna": "^4.0.0",
     "prettier": "^2.5.1"
   },
   "dependencies": {
-    "@project-serum/anchor": "^0.18.2",
-    "@solana/web3.js": "^1.31.0",
-    "@types/node": "^16.11.12",
-    "@types/react": "^17.0.37",
-    "react": "^17.0.2",
     "typescript": "^4.5.2"
   },
   "prettier": {
