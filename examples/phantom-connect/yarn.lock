@@ -65,13 +65,12 @@
     "@babel/helper-validator-identifier" "^7.14.9"
     to-fast-properties "^2.0.0"
 
-"@dobosmarton/phantom-hook@^0.1.2":
-  version "0.1.2"
-  resolved "https://npm.pkg.github.com/download/@dobosmarton/phantom-hook/0.1.2/73cc5d63bcc76af6ceec6559100fe629eea9c46802217aa25db15e36d32c9f5b#c91f1a2935d4b369912fc2c0387f80c53bd66aab"
-  integrity sha512-WkIbJxl3Nrpi+pOX2N1Kbcja3EI20uZN2Q3BrEnI5ZVWLwKaMBsIAoi9k8km3TSXaS+yvvOYIjZp0KImgZI2Ug==
+"@dobosmarton/phantom-hook@^0.1.3":
+  version "0.1.3"
+  resolved "https://npm.pkg.github.com/download/@dobosmarton/phantom-hook/0.1.3/9e91d7f58dd622c0d202c392fd16d6f77248b0288e0078d368967b7f7a570ca2#18fa4605710aa4131ce767dba632286536f48a2c"
+  integrity sha512-qsQslqkzRw/YESWHdhV9OHZvUFJkM3a0mdQC7Af3nHaOrEyY3/BvbNZlc5SmX4yRYcwP90pEAxqvPQCsNO3dhA==
   dependencies:
-    react "^17.0.2"
-    typescript "^4.5.2"
+    typescript "^4.5.3"
 
 "@eslint/eslintrc@^1.0.5":
   version "1.0.5"
@@ -2368,7 +2367,7 @@ react-refresh@0.8.3:
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"
   integrity sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
 
-react@17.0.2, react@^17.0.2:
+react@17.0.2:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react/-/react-17.0.2.tgz#d0b5cc516d29eb3eee383f75b62864cfb6800037"
   integrity sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==
@@ -2785,7 +2784,7 @@ type-fest@^0.7.1:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.7.1.tgz#8dda65feaf03ed78f0a3f9678f1869147f7c5c48"
   integrity sha512-Ne2YiiGN8bmrmJJEuTWTLJR32nh/JdL1+PSicowtNb0WFpn59GK8/lfD61bVtzguz7b3PBt74nxpv/Pw5po5Rg==
 
-typescript@4.5.3, typescript@^4.5.2:
+typescript@4.5.3, typescript@^4.5.3:
   version "4.5.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.5.3.tgz#afaa858e68c7103317d89eb90c5d8906268d353c"
   integrity sha512-eVYaEHALSt+s9LbvgEv4Ef+Tdq7hBiIZgii12xXJnukryt3pMgJf6aKhoCZ3FWQsu6sydEnkg11fYXLzhLBjeQ==
