@@ -26,18 +26,15 @@
     "url": "https://github.com/dobosmarton/solana-hooks/issues"
   },
   "peerDependencies": {
-    "react": "^17.0.2",
-    "typescript": "^4.5.2"
+    "react": "^17.0.2"
   },
   "devDependencies": {
     "@types/jest": "^27.0.3",
     "@types/node": "^16.11.12",
     "@types/react": "^17.0.37",
     "jest": "^27.4.3",
-    "react": "^17.0.2"
-  },
-  "gitHead": "2f59b99b76e8c4823768c191152f24d1f91ba853",
-  "dependencies": {
+    "react": "^17.0.2",
     "typescript": "^4.5.3"
-  }
+  },
+  "gitHead": "2f59b99b76e8c4823768c191152f24d1f91ba853"
 }
