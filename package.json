@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "start": "tsc",
-    "build": "cd packages/solana/ && yarn run build && cd ../phantom/ && yarn run build"
+    "build": "cd packages/solana/ && yarn run build && cd ../phantom/ && yarn run build",
+    "publish": "lerna publish --registry=https://npm.pkg.github.com/"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.6.0",
