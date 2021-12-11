@@ -3,6 +3,7 @@
     "target": "ES2020",
     "module": "commonjs",
     "moduleResolution": "node",
+    "declaration": true,
     "sourceMap": true,
     "removeComments": false,
     "importHelpers": false,
@@ -16,5 +17,6 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "exactOptionalPropertyTypes": true
-  }
+  },
+  "exclude": ["./examples/**/*", "./node_modules/**/*"]
 }
