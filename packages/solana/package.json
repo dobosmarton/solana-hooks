@@ -1,6 +1,6 @@
 {
   "name": "@dobosmarton/solana-hook",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "React hook with basic Solana functions",
   "author": "Marton Dobos <dobeis2@gmail.com>",
   "homepage": "https://github.com/dobosmarton/solana-hooks#readme",
