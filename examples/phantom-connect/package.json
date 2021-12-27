@@ -1,6 +1,5 @@
 {
   "name": "phantom-connect",
-  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",

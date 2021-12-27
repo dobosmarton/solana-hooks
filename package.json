@@ -4,7 +4,6 @@
   "description": "React hooks for development on Solana network",
   "author": "Marton Dobos",
   "license": "MIT",
-  "private": true,
   "workspaces": [
     "packages/*"
   ],
